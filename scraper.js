@@ -32,7 +32,7 @@ const getProduct = async (yourPrice) => {
             from: process.env.user,
             to: 'youremail@gmail.com',
             subject: 'Price dropped down!',
-            text: `The price for your product has dropped to <strong>${price}€</strong>, here's the link: ${url}. `
+            html: `The price for your product has dropped to <strong>${price}€</strong>, here's the link: ${url}. `
         }
 
         if(price <= yourPrice) {
