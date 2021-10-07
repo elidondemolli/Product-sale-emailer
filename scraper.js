@@ -50,6 +50,8 @@ const getProduct = async (yourPrice) => {
     }
 }
 
-getProduct(95);
+setInterval(() => {
+    getProduct(95);
+}, 300000) // Checks the price of the product every 5 mins
 
 app.listen(PORT, console.log(`app running on port ${PORT}`));
